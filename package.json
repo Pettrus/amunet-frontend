@@ -1,0 +1,26 @@
+{
+  "name": "amunet",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "font-awesome": "^4.7.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-infinite-scroll-component": "^4.2.0",
+    "react-overdrive": "0.0.10",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-skeleton-loader": "^1.0.3",
+    "reactstrap": "^6.4.0",
+    "styled-components": "^3.4.2",
+    "webtorrent": "^0.102.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

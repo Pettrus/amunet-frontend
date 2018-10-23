@@ -1,0 +1,62 @@
+.loader {
+  margin: auto;
+  height: 10px;
+  width: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.loader li {
+  display: block;
+  float: left;
+  width: 90px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.loader li:nth-child(-n+3) {
+  background: rgba(255,255,255,0.9);
+  box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                    0px 0px 20px rgba(117,182,214,0.5);
+}
+
+.loader li:nth-child(n+4) {
+  box-shadow: inset 0px 0px 10px 1px rgba(117,182,255,0.4),
+                    0px 0px 20px rgba(117,182,255,0.1);
+}
+
+.loader li:nth-child(3) {
+  -webkit-animation: pulse 1s alternate infinite;
+  -moz-animation: pulse 1s alternate infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background: rgba(255,255,255,1);
+    box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                      0px 0px 40px 2px rgba(105,135,255,1);
+  }
+  100% {
+    background: rgba(255,255,255,0);
+    box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                      0px 0px 30px 2px rgba(105,135,255,0.3);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    background: rgba(255,255,255,1);
+    box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                      0px 0px 40px 2px rgba(105,135,255,1);
+  }
+  100% {
+    background: rgba(255,255,255,0);
+    box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                      0px 0px 30px 2px rgba(105,135,255,0.3);
+  }
+}
